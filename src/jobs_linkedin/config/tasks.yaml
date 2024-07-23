@@ -1,0 +1,41 @@
+research_jobs_task:
+  description: >
+    Conduct thorough research to find potential job opportunities for the specified applicant.
+    Utilize the linkedin jobs web pages to gather a comprehensive list of potential job positions.
+    Ensure that the jobs meet the applicant's qualifications and career aspirations.
+
+    Applicant's Resume/Curriculum:
+    {applicant_resume}
+  expected_output: >
+    A list of 10 potential job opportunities with descriptions, proficiency matches, desired skillset for the job and details highlighting their suitability
+    and the job link to apply.
+
+match_and_score_jobs_task:
+  description: >
+    Evaluate and match the job opportunities to the applicant based on their qualifications and career aspirations.
+    Score each job opportunity to reflect its alignment with the applicant's profile, ensuring a fair and transparent assessment process.
+
+    Applicant's Resume/Curriculum:
+    {applicant_resume}
+  expected_output: >
+    A ranked list of job opportunities with detailed scores and justifications for each position.
+
+outreach_strategy_task:
+  description: >
+    Develop a comprehensive strategy to reach out to the selected jobs.
+    Create effective outreach methods and templates that can engage the applicant with the recruiters and encourage them to consider the applicant for the job opportunity.
+    Applicant's Resume/Curriculum:
+    {applicant_resume}
+  expected_output: >
+    A detailed list of outreach methods and templates ready for implementation, including communication strategies and engagement tactics that cater to the applicant's strengths and career goals.
+
+report_jobs_task:
+  description: >
+    Compile a comprehensive report for the applicant on the best job opportunities to pursue.
+    Summarize the findings from the previous tasks and provide clear recommendations based on the applicant's resume.
+
+    Applicant's Resume/Curriculum:
+    {applicant_resume}
+  expected_output: >
+    A detailed report formatted as markdown without '```', highlighting the best job opportunities to pursue with the link to apply,
+    including job descriptions, scores, an explanation on why they were selected and suggested outreach strategies.

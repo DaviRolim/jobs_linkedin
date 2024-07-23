@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "jobs_linkedin"
+version = "0.1.0"
+description = "jobs_linkedin using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.36.1" }
+
+[tool.poetry.scripts]
+jobs_linkedin = "jobs_linkedin.main:run"
+train = "jobs_linkedin.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
